@@ -14,6 +14,7 @@ public class Hab{
   this.payment = payment;
   this.withdrawal= withdrawal;
  }
+
  public String getDay() {
   return day;
  }
