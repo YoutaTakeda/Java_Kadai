@@ -18,7 +18,7 @@ public class Hab{
  public String getDay() {
   return day;
  }
- public void setId(String day) {
+ public void setDay(String day) {
   this.day = day;
  }
  public String getExpenses() {
@@ -36,7 +36,7 @@ public class Hab{
  public int getPayment() {
   return payment;
  }
- public void setSpeed(int payment) {
+ public void setPatment(int payment) {
   this.payment = payment;
  }
  public int getWithdrawal() {
