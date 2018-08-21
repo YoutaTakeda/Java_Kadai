@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
-	Hab show = (Hab)request.getAttribute("Insert");
+	request.setCharacterEncoding("utf-8");
 %>
 <table border="1">
 	<tr>
@@ -20,11 +20,11 @@
 	<th>出費</th>
 	</tr>
 	<tr>
-	<td><%=show.getDay() %></td>
-	<td><%=show.getExpenses() %></td>
-	<td><%=show.getMemo() %></td>
-	<td><%=show.getPayment() %></td>
-	<td><%=show.getWithdrawal() %></td>
+	<td><%=request.getParameter("day") %></td>
+	<td><%=request.getParameter("expenses") %></td>
+	<td><%=request.getParameter("memo") %></td>
+	<td><%=request.getParameter("payment") %></td>
+	<td><%=request.getParameter("withdwaral") %></td>
 	</tr>
 </table>
 </body>

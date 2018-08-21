@@ -1,6 +1,5 @@
 package Servlet;
 
-
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -11,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MainHab
+ * Servlet implementation class ListView_Servlet
  */
-@WebServlet("/MainHab")
-public class MainHab extends HttpServlet {
+@WebServlet("/ListView_Servlet")
+public class ListView_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MainHab() {
+    public ListView_Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,9 +28,10 @@ public class MainHab extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String view = "/WEB-INF/view/Registration.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-		dispatcher.forward(request, response);
+		// TODO Auto-generated method stub
+		String view = "/WEB-INF/view/listview.jsp";
+		RequestDispatcher dis = request.getRequestDispatcher(view);
+		dis.forward(request, response);
 	}
 
 	/**
@@ -40,6 +40,6 @@ public class MainHab extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
 
-}
 }
