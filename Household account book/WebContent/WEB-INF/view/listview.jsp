@@ -31,5 +31,7 @@
 		</tr>
 		<%} %>
 	</table>
+	<a href="/Household_account_book/MainHab">一覧画面</a>
+	<a href="/Household_account_book/ListView_Servlet">一覧画面</a>
 </body>
 </html>
